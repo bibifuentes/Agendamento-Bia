@@ -7,11 +7,11 @@ const Cadastro3 = () => {
   const [planoSaude, setPlanoSaude] = useState('');
 
   const handleFinalizar = () => {
-    router.push('/'); // Altere para a rota da página inicial
+    router.push('/'); 
   };
 
   const handleVoltar = () => {
-    router.push('/cadastro2'); // Navega para a página de cadastro2
+    router.push('/cadastro2');
   };
 
   return (
@@ -19,7 +19,7 @@ const Cadastro3 = () => {
       <Image source={require('../assets/images/FrameLogin.png')} style={styles.userImage} />
       <Text style={styles.title}>Escolha seu Plano de Saúde</Text>
 
-      {/* Opção de plano de saúde */}
+      
       <TouchableOpacity 
         style={[styles.option, planoSaude === 'Plano A' && styles.selectedOption]}
         onPress={() => setPlanoSaude('Plano A')}

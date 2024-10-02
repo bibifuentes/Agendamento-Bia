@@ -11,11 +11,11 @@ const Cadastro2 = () => {
   const [telefone, setTelefone] = useState('');
 
   const handleAvancar = () => {
-    router.push('/cadastro3'); // Navega para a próxima página
+    router.push('/cadastro3'); 
   };
 
   const handleVoltar = () => {
-    router.back(); // Navega para a página anterior
+    router.back(); 
   };
 
   return (
